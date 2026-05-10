@@ -81,3 +81,5 @@ Using a standard **820mAh LiPo battery** without any solar panel input (complete
 * **22 hours parked** (Deep Sleep @ 286 µA + periodic Scanning bursts @ 4.47 mA)
 
 Under these conditions, the dashboard will run autonomously for **23.7 days** before fully depleting the battery. With the addition of a 5V solar panel catching daily sunlight, the system replenishes the consumed energy, achieving a theoretically infinite energy-harvesting loop.
+
+![Power Profile](/power_profile/sleeping-current.png)
