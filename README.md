@@ -38,7 +38,7 @@ To build this project exactly as configured, you will need the following hardwar
 
 Before compiling, ensure you have the following installed in your Arduino IDE:
 
-1. **Board Support Package (BSP):** [Rakwireless nRF Boards](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) installed via the Boards Manager.
+1. **Board Support Package (BSP):** [RAKwireless nRF Boards](https://github.com/RAKWireless/RAKwireless-Arduino-BSP-Index) installed via the Boards Manager.
 2. **Libraries:**
    * `Adafruit Bluefruit nRF52` (For BLE Central operations).
    * `U8g2` by olikraus (For driving the SSD1306 OLED display).
@@ -54,7 +54,9 @@ Before compiling, ensure you have the following installed in your Arduino IDE:
 **Step 3:** Compile and flash the code to your RAK4631. 
 * *Note: The code defaults to searching for a BLE device exposing the `0xFFF0` service UUID. If your specific ELM327 uses different UUIDs for its UART service, update the `obdService`, `obdNotifyChar`, and `obdWriteChar` variables at the top of the sketch.*
 
-**Step 4:** Plug the ELM327 BLE adapter into your car's OBD2 port.
+**Step 4:** Plug the ELM327 BLE adapter into your car's OBD2 port. The monitor will automatically connect with the ELM327 and start showing the temperature.
+
+![Monitor working](/readme_assets/monitor.jpg)
 
 ---
 
